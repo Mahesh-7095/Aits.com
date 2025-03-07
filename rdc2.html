@@ -1,0 +1,644 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annamacharya Institute of Technology & Sciences</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <!-- Left Side: Logo -->
+        <div class="logo">
+          <img src="logo.png" alt="Annamacharya Institute Logo" />
+        </div>
+
+        <!-- Middle: Text with Styling -->
+        <div class="institute-info">
+          <h1>
+            <span class="blue-text"
+              >Annamacharya Institute of Technology & Sciences, Tirupati</span
+            ><br />
+            <span class="red-text">(Autonomous)</span>
+          </h1>
+          <p class="blue-text">
+            Approved by AICTE, New Delhi & Affiliation to JNTUA,
+            Anantapuramu.<br />
+            All the 5 eligible UG Engineering Programs are accredited by NBA,
+            New Delhi.<br />
+            Accredited by NAAC with 'A' Grade, Bangalore. Accredited by
+            Institution of Engineers (India), KOLKATA.<br />
+            Recognized under sections 2(f) & 12(B) of UGC Act 1956.
+          </p>
+        </div>
+
+        <!-- Right Side: Code in a Box -->
+        <div class="code-box">
+          <p>EAMCET / ICET</p>
+          <p>PGECET / ECET CODE</p>
+          <p>AITT</p>
+        </div>
+      </div>
+      <!-- Blinking Text Section -->
+      <div class="blinking-text-container">
+        <p class="blinking-text">
+          A stage has been set to evaluate Institution's performance in Tier-1
+          credentials of NBA
+        </p>
+      </div>
+
+      <!-- JavaScript for Dynamic Colors -->
+      <script>
+        const colors = [
+          { bg: "#FF6F61", text: "#FFFFFF" }, // Coral
+          { bg: "#6B5B95", text: "#FFFFFF" }, // Purple
+          { bg: "#88B04B", text: "#FFFFFF" }, // Green
+          { bg: "#F7CAC9", text: "#333333" }, // Pink
+          { bg: "#92A8D1", text: "#333333" }, // Blue
+          { bg: "#955251", text: "#FFFFFF" }, // Maroon
+          { bg: "#B565A7", text: "#FFFFFF" }, // Magenta
+          { bg: "#009B77", text: "#FFFFFF" }, // Teal
+        ];
+
+        const container = document.querySelector(".blinking-text-container");
+        const text = document.querySelector(".blinking-text");
+
+        let currentIndex = 0;
+
+        function changeColors() {
+          const { bg, text: textColor } = colors[currentIndex];
+          container.style.backgroundColor = bg;
+          text.style.color = textColor;
+
+          currentIndex = (currentIndex + 1) % colors.length; // Cycle through colors
+        }
+
+        setInterval(changeColors, 3000); // Change colors every 3 seconds
+      </script>
+    </header>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">About AITS</a>
+          <div class="dropdown-content">
+            <a href="#">Governance</a>
+            <a href="#">Facilities</a>
+            <a href="#">Affiliation & Accreditation</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Academics</a>
+          <div class="dropdown-content">
+            <a href="#">Courses Offered</a>
+            <a href="#">Academic Curriculum</a>
+            <a href="#">Examination</a>
+            <a href="#">Toppers List</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Departments</a>
+          <div class="dropdown-content">
+            <a href="#">AIDS</a>
+            <a href="#">AIML</a>
+            <a href="#">ECE</a>
+            <a href="#">CSE</a>
+            <a href="#">CDS</a>
+            <a href="#">IOT and Cyber Security</a>
+            <a href="#">EEE</a>
+            <a href="#">ME</a>
+            <a href="#">CE</a>
+            <a href="#">HBS</a>
+            <a href="#">MBA</a>
+            <a href="#">MCA</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">IQAC</a>
+          <div class="dropdown-content">
+            <a href="#">About IQAC</a>
+            <a href="#">Best Practices</a>
+            <a href="#">Institutional Distinctiveness</a>
+            <a href="#">Quality Circles</a>
+            <a href="#">AQARs</a>
+            <a href="#">Meetings</a>
+            <a href="#">Feedback</a>
+            <a href="#">Student Satisfaction Survey</a>
+            <a href="#">Contact</a>
+          </div>
+        </li>
+        <li><a href="#">ICAME 2024</a></li>
+        <li><a href="rdc.html">R & D</a></li>
+        <li><a href="nrif.html">NIRF</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Campus Placements</a>
+          <div class="dropdown-content">
+            <a href="#">Placements</a>
+            <a href="#">Placement Gallery</a>
+          </div>
+        </li>
+        <li><a href="#">Alumni</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Events & Gallery</a>
+          <div class="dropdown-content">
+            <a href="#">Events</a>
+            <a href="#">Photo Gallery</a>
+            <a href="#">Video Gallery</a>
+            <a href="#">Professional Societies</a>
+            <a href="#">Other</a>
+          </div>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="verification.pdf">Student Certificate Verification Procedure</a></li>
+      </ul>
+    </nav>
+    <nav class="navbar"></nav>
+
+<div class="news-marquee-container">
+    <div class="latest-news-static">
+        Latest News:
+    </div>
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            A stage has been set to evaluate Institution’s performance in Tier-1 credentials of NBA &nbsp;&nbsp;&nbsp; B. Tech ME and B. Tech EEE are accredited by NBA in Tier-I mode up to June 2027
+        </marquee>
+    </div>
+</div>
+
+        <section class="rdc-section">
+          <div class="rdc-container">
+            <h2>Research & Development Cell (RDC)</h2>
+            <div class="rdc-buttons">
+              <button class="rdc-button" data-content="about">
+                About R & D
+              </button>
+              <button class="rdc-button" data-content="funded">
+                Funded Projects
+              </button>
+              <button class="rdc-button" data-content="patents">
+                Patents Published and Granted
+              </button>
+              <button class="rdc-button" data-content="publications">
+                Publications
+              </button>
+              <button class="rdc-button" data-content="policies">
+                Research Policies
+              </button>
+            </div>
+            <div class="rdc-content" id="rdc-content"></div>
+          </div>
+        </section>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".rdc-button");
+            const contentDiv = document.getElementById("rdc-content");
+
+            buttons.forEach((button) => {
+              button.addEventListener("click", function () {
+                const contentKey = this.getAttribute("data-content");
+                let content = "";
+
+                switch (contentKey) {
+                  case "about":
+                    content = `
+                                <button class="collapsible">Policy</button>
+                                <div class="content">
+                                    <p><b>Introduction</b><br>Annamacharya Institute of Technology & Sciences, Tirupati has promoted meaningful, scientific and industrial R&D activities with the vision and mission of pursuing and promoting research in frontier technologies as well as the various disciplines of Engineering, Science, Humanities, and Management. The RDC aims to reach the Vision and Mission of the college by encouraging the students and faculty to undertake the research in newly emerging frontier areas and multidisciplinary fields. The organizational structure of RDC consists of various committees to facilitate and monitor research activities.<br><br><b>Vision</b><br>To put in place a robust mechanism for developing and strengthening the research ecosystem within Institution, aligned with the provisions of NEP-2020.<br><br><b>Mission</b><br>To create a conducive environment for enhanced research productivity.<br>To encourage collaboration across industry, government, community-based organizations, and agencies at the local, national, and international levels.<br>To facilitate greater access to research through mobilization of resources and funding<br><br><b>Objectives</b><br>To create an organizational structure with role-based functions of RDC, formulate Research Policy for AITS, identify thrust areas of research, and form related cluster groups/ frontline teams/consortia of researchers.<br>To create enabling provisions in Research Policies for recruitment of research personnel, procurement of equipment, and financial management with adequate autonomy to the Principal Investigator(s) and disseminate research outcomes to stakeholders and the public at large.<br>To establish a special purpose vehicle to promote researchers and innovators, identify potential collaborators from industry, research organizations, academic institutions & other stakeholders for cooperation and synergistic partnerships.<br>To act as a liaison between researchers & relevant research funding agencies, extend guidance in preparation & submission of project proposals and post-sanctioning of the grants to oversee adherence to timelines.<br>To have better coordination among other cells/centers dealing with Institute-Industry Linkage, Incubation, Innovation and Entrepreneurship Development and Intellectual Property Rights (IPR).<br>To develop an Institutional Research Information System for sharing the status of ongoing/ completed research projects/Programmes, expertise & resources, etc., making effective use of Information & Communication Technology (ICT) for preparing the database of in-house experts to provide industrial consultancy and services.<br>To engage & utilize the services of superannuated active faculty/scientists in research capacity building of talented young minds and promote mobility of researchers across institutions and R&D Labs.<br>To serve as nodal center for ideation and conceptualization of research topics/themes by organizing workshops and training programs and ensuring the integrity and ethical practices in research activities.<br><br><b>Roles and Responsibilities of RDC:</b><br>To enhance the Research Ecosystem of the college<br>To promote Academic Research in the college with Faculty and students<br>To preserve the Code of ethics of the college while publishing<br>To help the faculty in applying for funds in the form of Sponsored research / Grants from government and non government agencies<br>To pave the path for the teachers, students and researchers to collaborate for research</p>
+                                </div>
+                                <button class="collapsible">R And D Organogram</button>
+                                <div class="content">
+                                    <img src="orga.png" alt="R&D Organogram">
+                                </div>
+                                <button class="collapsible">Compositions of RAC & RDC</button>
+                                <div class="content">
+                                    <p>Research & Development Wing<br>Research & Development Wing in the college comprises two committees<br>a) Research Advisory Council (RAC)<br>b) Research & Development Cell (RDC)</p>
+                                    <p>Composition of Research Advisory Council (RAC)</p>
+                                    <table>
+                                        <tr><th>S.No</th><th>Name and designation</th><th>Role in the Council</th></tr>
+                                        <tr><td>1</td><td>Prof. C. Nadhamuni Reddy<br>Principal, AITS, Tirupati</td><td>Chairperson</td></tr>
+                                        <tr><td>2</td><td>Sri. C. Abhishek Reddy<br>Executive Director, AITS, Tirupati</td><td>Advisor</td></tr>
+                                        <tr><td>3</td><td>Dr. V.N. Mani<br>Scientist-F, C-MET, Hyderabad</td><td>Advisor</td></tr>
+                                        <tr><td>4</td><td>Dr. T. Rajendra Prasad<br>Scientist-F, NARL, Gadanki</td><td>Advisor</td></tr>
+                                    </table>
+                                    <p>Composition of Research & Development Cell(RDC)</p>
+                                    <table>
+                                        <tr><th>S.No</th><th>Name and designation</th><th>Role in the RDC</th></tr>
+                                        <tr><td>1</td><td>Dr. J. Guru Jawahar<br>Professor, Dept.of CE, AITS, Tirupati</td><td>Director/ Convener</td></tr>
+                                        <tr><td>2</td><td>Dr. K. Ramya<br>Coordinator, Internal Quality Assurance Cell (IQAC), AITS, Tirupati</td><td>Member</td></tr>
+                                        <tr><td>3</td><td>Dr. K. Balaji Nanda Kumar Reddy<br>Convener, Research Ethics Committee (REC), AITS, Tirupati</td><td>Member</td></tr>
+                                        <tr><td>4</td><td>Mr. P. Bhanu Prakash<br>Convener, Industry-Interaction Cell (IIC), AITS, Tirupati</td><td>Member</td></tr>
+                                        <tr><td>5</td><td>Dr. K. Thulasirajan<br>Coordinator, Intellectual Property Rights (IPR), AITS, Tirupati</td><td>Member</td></tr>
+                                        <tr><td>6</td><td>Dr. P. Lavanya<br>Coordinator, Institute Ethics Committee (IEC), AITS, Tirupati</td><td>Member</td></tr>
+                                        <tr><td>7</td><td>Mr. N. Dilip Kumar<br>Coordinator, Entrepreneurship Innovation and Start-ups Centre (EISC), AITS, Tirupati</td><td>Member</td></tr>
+                                        <tr><td>8</td><td>Mr. D. Ayyappa Reddy<br>Accounts Officer, AITS, Tirupati</td><td>Member</td></tr>
+                                    </table>
+                                </div>
+                            `;
+                    break;
+                  // Add cases for other buttons here
+                  case "funded":
+                    content = `
+                                <h3>Funded Projects</h3>
+                                <p>Grants Received under AQIS-AICTE</p>
+                                <table>
+                                    <tr><th>Year</th><th>Scheme</th><th>Name of the coordinator</th><th>Amount Sanctioned</th><th>Sanctioned Letter Date</th><th>Sanctioned Letter Number</th></tr>
+                                    <tr><td>2020</td><td>MODROBS</td><td>Dr. N. Pushpalatha</td><td>8,10,980</td><td>20-07-2020</td><td>F.No. 9-155ADC/MODROB/Policy-I/2019-2020</td></tr>
+                                    <tr><td>2020</td><td>FDP</td><td>Dr. S. Arul</td><td>5,30,333</td><td>20-07-2020</td><td>Application ID (1-7080740041)</td></tr>
+                                    <tr><td>2020</td><td>STTP</td><td>Dr. N. Pushpalatha</td><td>3,25,000</td><td>10-01-2020</td><td>F.No. 34-65/291/RIFD/STTP/Policy-I/2018-19</td></tr>
+                                    <tr><td>2019</td><td>GOC</td><td>Dr. N. Chandrika</td><td>4,97,500</td><td>09.12.2020</td><td>F.No. 67-49/RIFD/GOC/Policy/Policy-I/2018-19</td></tr>
+                                    <tr><td>2019</td><td>FDP</td><td>Dr. S. Arul</td><td>4,78,000</td><td>10-05-2019</td><td>F.No. 34-55/5/RIFD/FDP/Policy-I/2017-18</td></tr>
+                                    <tr><td>2019</td><td>STTP</td><td>Dr. K. Narasimhulu</td><td>3,50,000</td><td>10-05-2019</td><td>F.No. 34-56/124/RIFD/STTP/Policy-I/2017-18</td></tr>
+                                    <tr><td>2019</td><td>STTP</td><td>Dr. C. Sasikala</td><td>3,44,000</td><td>10-05-2019</td><td>F.No. 34-56/63/RIFD/STTP/Policy-I/2017-18</td></tr>
+                                    <tr><td>2013</td><td>SEMINAR GRANT</td><td>K. Balaji Nanda Kumar Reddy</td><td>2,00,000</td><td>29-07-2013</td><td>F.No.7-209/RIFD/SG/POLICY-1/2013-14 & 7-01-2014</td></tr>
+                                    <tr><td>2011</td><td>SEMINAR GRANT</td><td>Md. Jakeer Hussain</td><td>1,00,000</td><td>31-03-2011</td><td>F.No. RIFD/SEM/121/2010-11</td></tr>
+                                    <tr><td colspan="3">Total Amount Sanctioned</td><td>36,35,813</td><td colspan="2"></td></tr>
+                                </table>
+                            `;
+                    break;
+                  case "publications":
+                    content = `
+                                <h3>Publications</h3>
+                                <p>No. of papers published in National/ International Journals and National/ International Conferences</p>
+                                <table>
+                                    <tr><th>No</th><th>Year</th><th>CE</th><th>CSE</th><th>ECE</th><th>EEE</th><th>ME</th><th>MBA</th><th>MCA</th><th>HBS</th><th>Total</th></tr>
+                                    <tr><td>1</td><td>2023-24</td><td>3</td><td>5</td><td>11</td><td>6</td><td>12</td><td>3</td><td>13</td><td>2</td><td>53</td></tr>
+                                    <tr><td>2</td><td>2022-23</td><td>4</td><td>5</td><td>7</td><td>0</td><td>11</td><td>5</td><td>23</td><td>3</td><td>40</td></tr>
+                                    <tr><td>3</td><td>2021-22</td><td>2</td><td>9</td><td>0</td><td>9</td><td>6</td><td>0</td><td>8</td><td>0</td><td>34</td></tr>
+                                    <tr><td>4</td><td>2020-21</td><td>6</td><td>5</td><td>0</td><td>7</td><td>5</td><td>2</td><td>0</td><td>6</td><td>144</td></tr>
+                                    <tr><td>5</td><td>2019-20</td><td>2</td><td>0</td><td>18</td><td>3</td><td>8</td><td>15</td><td>16</td><td>0</td><td>128</td></tr>
+                                    <tr><td>6</td><td>2018-19</td><td>5</td><td>3</td><td>24</td><td>6</td><td>22</td><td>5</td><td>16</td><td>0</td><td>197</td></tr>
+                                    <tr><td>7</td><td>2017-18</td><td>7</td><td>2</td><td>12</td><td>4</td><td>19</td><td>0</td><td>5</td><td>0</td><td>167</td></tr>
+                                    <tr><td colspan="2">Sub Total</td><td>31</td><td>9</td><td>25</td><td>6</td><td>49</td><td>10</td><td>91</td><td>11</td><td>703</td></tr>
+                                </table>
+                            `;
+                    break;
+                  case "policies":
+                    content = `
+                                <h3>Research Policies</h3>
+                                <a href="research.pdf" target="_blank"><button>Research Policy</button></a>
+                                <a href="seed.pdf" target="_blank"><button>Seed Money Policy</button></a>
+                            `;
+                    break;
+                    case "patents":
+                      content='
+          <section class="patents-section">
+          <div class="patents-container">
+            <h2>Patents Published and Granted</h2>
+            <div class="patent-headings">
+              <button class="patent-heading" data-content="ece">
+                Patent Details from 2017-18 to 2023-24: ECE Department
+              </button>
+              <button class="patent-heading" data-content="cse">
+                Patent Details from 2017-18 to 2023-24: CSE Department
+              </button>
+              <button class="patent-heading" data-content="ce">
+                Patent Details from 2017-18 to 2023-24: CE Department
+              </button>
+              <button class="patent-heading" data-content="me">
+                Patent Details from 2017-18 to 2023-24: ME Department
+              </button>
+              <button class="patent-heading" data-content="ai">
+                Patent Details from 2023-24: AI Department
+              </button>
+              <button class="patent-heading" data-content="mca">
+                Patent Details from 2023-24: MCA Department
+              </button>
+              <button class="patent-heading" data-content="hbs">
+                Patent Details from 2017-18 to 2023-24: HBS
+              </button>
+            </div>
+            <div class="patent-content" id="patent-content"></div>
+          </div>
+        </section>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const headings = document.querySelectorAll(".patent-heading");
+            const contentDiv = document.getElementById("patent-content");
+
+            headings.forEach((heading) => {
+              heading.addEventListener("click", function () {
+                const contentKey = this.getAttribute("data-content");
+                let content = "";
+
+                switch (contentKey) {
+                  case "ece":
+                    content = `
+                            <h3>Patent Details from 2017-18 to 2023-24: ECE Department</h3>
+                            <table>
+                                <tr><th>S.No.</th><th>Year</th><th>Title of Patent</th><th>Status</th><th>Ownership details</th><th>File/ID No</th></tr>
+                                <tr><td>1.</td><td>2023-24</td><td>Ai Based System To Study The Gene Mutations And Their Sequence Listings In Physically Challenged Persons</td><td>Published</td><td>Dr.R.SenthamilSelvan et al.</td><td>202341044508</td></tr>
+                                <tr><td>2.</td><td>2023-24</td><td>Liquid Rechargeable Lithium Ion Battery For Electric Vehicle Using Deep Learning Approach</td><td>Published</td><td>Dr.R.SenthamilSelvan et al.</td><td>202341089553</td></tr>
+                                <tr><td>3.</td><td>2023-24</td><td>Active Noise Cancellation Earphone Design</td><td>Granted</td><td>Dr.R.SenthamilSelvan et al.</td><td>6356327</td></tr>
+                                <tr><td>4.</td><td>2023-24</td><td>Drone for Underwater Inspection and Exploration</td><td>Granted</td><td>Dr.R.SenthamilSelvan et al.</td><td>6343634</td></tr>
+                                <tr><td>5.</td><td>2023-24</td><td>Mobile Robot with Interchangeable Machine learning modules for various tasks</td><td>Filed</td><td>Dr.R.SenthamilSelvan et al.</td><td>202441030186</td></tr>
+                                <tr><td>6.</td><td>2023-24</td><td>Nano fiber-Based Air Filtration System for improved indoor air quality</td><td>Published</td><td>Dr.R.SenthamilSelvan et al.</td><td>202441034823</td></tr>
+                                <tr><td>7.</td><td>2023-24</td><td>Smart Speaker With Interactive Holographic Interface For Voice-Activated Machine Learning Tasks</td><td>Published</td><td>Dr.R.SenthamilSelvan et al.</td><td>202441023354</td></tr>
+                                <tr><td>8.</td><td>2023-24</td><td>Intelligent Chronic Disease Prediction System Using Machine Learning And Iot Integration</td><td>Published</td><td>Dr.R.SenthamilSelvan et al.</td><td>202441018996</td></tr>
+                                <tr><td>9.</td><td>2023-24</td><td>Integrated Cooling System For High-Temperature Operation Of Electric Vehicle Fuel Cells, Intellectual Property India</td><td>Published</td><td>Dr.R.SenthamilSelvan et al.</td><td>202441017668</td></tr>
+                                <tr><td>10.</td><td>2023-24</td><td>Emergency Charging Service For Electric Vehicles Equipped With Deep Learning And IOT-Based Efficient Energy Recycling</td><td>Published</td><td>Dr.R.SenthamilSelvan et al.</td><td>202441004200</td></tr>
+                                <tr><td>11.</td><td>2023-24</td><td>Ai/Ml Based Reinforced Construction By High Speed 3d Printing</td><td>Published</td><td>Dr.R.SenthamilSelvan et al.</td><td>202421002104</td></tr>
+                                <tr><td>12.</td><td>2022-23</td><td>Human Centered AI System to Empower Genomic Data Analysis and Extraction</td><td>Published</td><td>Dr.N.Pushpalatha/Dr.R.SenthamilSelvan.</td><td>202241063770A</td></tr>
+                                <tr><td>13.</td><td>2022-23</td><td>Design of Smart Home Automation using Cloud Networking System</td><td>Published</td><td>Dr.R.SenthamilSelvanet al.</td><td>202241041432A</td></tr>
+                                <tr><td>14.</td><td>2021-22</td><td>Battery Swapping Technology with Cloud Interface for Electrical Vehicle</td><td>Published</td><td>Dr.R.SenthamilSelvanet al.</td><td>202241022247</td></tr>
+                                <tr><td>15.</td><td>2021-22</td><td>A System based on Deep Learning Three-Dimensional Pipeline Reconstruction and Method Thereof</td><td>Published</td><td>Dr.N.Pushpalatha/ Dr.I.Suneetha</td><td>202131050687</td></tr>
+                                <tr><td>16.</td><td>2021-22</td><td>Patient Centric healthcare system using AI and Block chain</td><td>Published</td><td>Mr.P.Harish et al.</td><td>202141042806</td></tr>
+                                <tr><td>17.</td><td>20.</td><td>2021-22</td><td>An apparatus and a method for Beam forming using phased array antenna</td><td>Published</td><td>Dr.R.Kalyan et al.</td><td>202141035802</td></tr>
+                                <tr><td>18.</td><td>2020-21</td><td>Crowd Detection Camera to Speke the maintain and identify the suspect using AI-Based Programming</td><td>Published</td><td>Mr.P.Harish et al.</td><td>202141020989</td></tr>
+                                <tr><td>19.</td><td>2020-21</td><td>Collective Network Channel Decentralized Fountain Design Codes for Secure Communication in VANET</td><td>Published</td><td>Dr.R.SenthamilSelvan et al.</td><td>1714/2021-CHE, C.B.R No: 1368</td></tr>
+                            </table>
+                        `;
+                    break;
+                  case "cse":
+                    content = `
+                            <h3>Patent Details from 2017-18 to 2023-24: CSE Department</h3>
+                            <table>
+                                <tr><th>S.No.</th><th>Year</th><th>Title of Patent</th><th>Status</th><th>Ownership details</th><th>File/ID No</th></tr>
+                                <tr><td>1</td><td>2023-24</td><td>Deep Learning based Automatic prevention and detection of Brain tumour using Image processing, Data mining and Machine Learning algorithms for Smart Healthcare system</td><td>Published</td><td>Mr. B.RamanaReddy et al.</td><td>202441004706</td></tr>
+                                <tr><td>2</td><td>2023-24</td><td>IoT and Big Data based Wearable Healthcare system to improve next generation healthcare system</td><td>Published</td><td>Dr. Shaik Jumlesha et al.</td><td>202441002245</td></tr>
+                                <tr><td>3</td><td>2023-24</td><td>AI and IoT based Automated Attendance System using Facial Recognition</td><td>Published</td><td>Mr. B.RamanaReddy et al.</td><td>202441002586</td></tr>
+                                <tr><td>4</td><td>2023-24</td><td>AI based Prevention of cyber-attacks on healthcare organizations using IoT, Cloud Computing and Machine Learning approach</td><td>Published</td><td>Mr. B.RamanaReddy et al.</td><td>202441001931</td></tr>
+                                <tr><td>5</td><td>2023-24</td><td>AI based Criminal Digital Forensic Investigation and prediction using Blockchain Cloud computing and Machine learning algorithms</td><td>Published</td><td>Mr. NangilVenkatramana et al.</td><td>202441001224</td></tr>
+                                <tr><td>6</td><td>2023-24</td><td>Artificial intellectual based Automatic Drug discovery and drug recommended System for Doctor based Patient details using Deep Learning algorithms</td><td>Published</td><td>Mrs.B. Prathap et al.</td><td>202341081599</td></tr>
+                                <tr><td>7</td><td>2023-24</td><td>Artificial Intelligence based Traffic Monitoring and Car crash detection using and multimodal data from dashboard cameras and deep learning algorithms</td><td>Published</td><td>Mr U .Prem Sagar et al.</td><td>202341077026</td></tr>
+                                <tr><td>8</td><td>2023-24</td><td>Artificial Intelligence and IoT based Self-driving car for path planning and Road Lane detection with improved canny edges for self-driving cars in dynamic environment</td><td>Published</td><td>Mr. S. Revanth Babu et al.</td><td>202341075525</td></tr>
+                                <tr><td>9</td><td>2023-24</td><td>IoT based camera for healthcare management</td><td>Granted</td><td>Dr. Shaik Jumlesha et al.</td><td>202441002245</td></tr>
+                                <tr><td>10</td><td>2023-24</td><td>Artificial Intelligence based Prediction system to predict stock market Index price and crypto currency closing price using Machine Learning Algorithms</td><td>Published</td><td>Mr. B.RamanaReddy et al.</td><td>202341073042</td></tr>
+                                <tr><td>11</td><td>2023-24</td><td>Artificial Intelligence based Smart Level Crossings Systems to detect dangerous situations in level crossing environments in both road and railway safety using video surveillance system and Deep Learning Algorithms</td><td>Published</td><td>Ms. V.Bhargavi et al.</td><td>202341072105</td></tr>
+                                <tr><td>12</td><td>2023-24</td><td>Artificial Intelligence based smart Student Management System to monitor and Increasing student engagement through continuous assessment Using IoT and Machine Learning Algorithms</td><td>Published</td><td>Mrs. K.Jagadeeswari et al.</td><td>202341069912</td></tr>
+                                <tr><td>13</td><td>2023-24</td><td>IOT and Artificial Intelligence based Detection and Prevention of Plant disease with smart Drip Irrigation System using Block chain Technology and Deep Learning</td><td>Published</td><td>Mr. P Bhanu Prakash et al.</td><td>202341069910</td></tr>
+                                <tr><td>14</td><td>2023-24</td><td>Artificial Intelligence based Traffic Monitoring and Car crash detection using and multimodal data from dashboard cameras and deep learning algorithm</td><td>Published</td><td>Mrs. C Hemavathy et al.</td><td>202341071574</td></tr>
+                                <tr><td>15</td><td>2023-24</td><td>Artificial Intelligence based Smart system to enhance the better performance in the supply chain management using Big data and business analytics</td><td>Published</td><td>Mrs. G.Bhavana et al.</td><td>202341067361</td></tr>
+                                <tr><td>16</td><td>2023-24</td><td>Artificial intelligence based automatic healthcare management system for detection and prevention of Pancreatic cancer using Multidetector Computed tomography, image processing and machine learning algorithms</td><td>Published</td><td>Mrs. N. Supriya et al.</td><td>202341067236</td></tr>
+                                <tr><td>17</td><td>2023-24</td><td>Artificial Intelligent and Cloud based Conversational robot for Blind people Assistance</td><td>Published</td><td>Mrs.C.Malathi et al.</td><td>202341028256</td></tr>
+                                <tr><td>18</td><td>2023-24</td><td>Artificial Intelligence based Smart system for Heart sound detection and classification using signal processing and machine learning algorithms to avoid Heart attack and other heart diseases</td><td>Published</td><td>Mrs .P Sumalatha et al.</td><td>202341064321</td></tr>
+                                <tr><td>19</td><td>2023-24</td><td>I based safe healthcare system for fertility preservation for young woman with breast cancer using cloud and Machine learning Algorithms</td><td>Published</td><td>Mr. D Nagabhushanam et al.</td><td>202311064995</td></tr>
+                                <tr><td>20</td><td>2022-23</td><td>Framewework design for regulating healthcare efficiency and medical services using machine learning /artificial – intelligence.</td><td>Published</td><td>Dr.S.Jumlesha et.al</td><td>202241064218</td></tr>
+                                <tr><td>21</td><td>2021-22</td><td>Hybrid Memory Cube Oriented Image Classification using a Machine Learning Technique</td><td>Published</td><td>Dr.N.Badrinath et al.</td><td>202141042656</td></tr>
+                                <tr><td>22</td><td>2021-22</td><td>Artificial intelligence based covid-19 spread prediction</td><td>Published</td><td>Dr.N.Badrinath et al.</td><td>202141049570</td></tr>
+                                <tr><td>23</td><td>2021-22</td><td>Fine-grained Fish Classification on Underwater Images using Deep Learning Architectures</td><td>Published</td><td>Dr.N.Badrinath et al.</td><td>202141050186</td></tr>
+                                <tr><td>24</td><td>2021-22</td><td>A Machine Learning Approach to Study the Mental Health of Humans</td><td>Published</td><td>Dr.K.Navaz et al.</td><td>202241011194</td></tr>
+                                <tr><td>25</td><td>2021-22</td><td>Machine Learning Based Approach To Study The Impact Of Antibiotics On Toddlers Using Their Primary Health Related Data</td><td>Published</td><td>Dr.S.Athinarayanan et al.</td><td>202241017724</td></tr>
+                                <tr><td>26</td><td>2021-22</td><td>A Mobile Adhoc Network (Manet) For Tracking The Mobile Phones For Any Intrusions Or Mishandling Of Data</td><td>Published</td><td>Mr.B.Ramana Reddy et.al</td><td>202241018318</td></tr>
+                                <tr><td>27</td><td>2021-22</td><td>A Machine Learning based Approach for creating a Case Study of adaptability aspects of employees</td><td>Published</td><td>Ms.M. Reddy Durgasree et.al</td><td>202241022599</td></tr>
+                                <tr><td>28</td><td>2021-22</td><td>Artificial Intelligence based Technique to Monitor the digital Marketing Graphs and Techniques Through Big Data Analytics</td><td>Published</td><td>Dr.S.Jumlesha et.al</td><td>202211022601</td></tr>
+                                <tr><td>29</td><td>2021-22</td><td>Artificial Intelligence based Techniques Integrated with Image Processing to Calculate the Emotional Quotient Employees of an Organisation</td><td>Published</td><td>Mr.B.Sunil Kumar et.al</td><td>202241022520</td></tr>
+                                <tr><td>30</td><td>2021-22</td><td>Deep Learning Approach to Provide                                a vulnerable framework for safeguarding the Data’s that are Transferred over cloud along with cyber security</td><td>Published</td><td>Mrs.B.Rupadevi et al.</td><td>202241023064</td></tr>
+                                <tr><td>31</td><td>2021-22</td><td>Block Chain Technologies for disaster risk reduction and managing it During Emergency Conditions</td><td>Published</td><td>Dr.S.Athinarayanan et al.</td><td>202211022825</td></tr>
+                                <tr><td>32</td><td>2021-22</td><td>A Hybrid Prediction model for Big Data Clustering and Classification usig Random Forest, K-Means and Decision Tree</td><td>Published</td><td>Mr.Kiran Moni et.al</td><td>202241027528</td></tr>
+                                <tr><td>33</td><td>2021-22</td><td>Deep Learning based technique to analyse the Genome Sequence of Cancer Patients and Predict their Live Expectancy based on Cell Biology</td><td>Published</td><td>Mr.Revanthbabu et.al</td><td>202241028751</td></tr>
+                                <tr><td>34</td><td>2021-22</td><td>A Machine Learning Based Approach to Predict Growth of Tourism</td><td>Published</td><td>Dr.S.Athinarayanan et.al</td><td>202211028755</td></tr>
+                            </table>
+                        `;
+                    break;
+                  case "ce":
+                    content = `
+                            <h3>Patent Details from 2017-18 to 2023-24: CE Department</h3>
+                            <table>
+                                <tr><th>S.No</th><th>Year</th><th>Title of Patent</th><th>Status</th><th>Ownership details</th><th>File/ ID No</th></tr>
+                                <tr><td>1</td><td>2023-24</td><td>Predicting the performance of reinforced concretestructures against earthquakes using deep learning</td><td>Published</td><td>Dr.K.Thulasirajan et al.</td><td>202421008379</td></tr>
+                                <tr><td>2</td><td>2023-24</td><td>Development of drainage water quality system for irrigation using the water quality index and datafit software</td><td>Published</td><td>Mr. A. Anil et al.</td><td>202321051275</td></tr>
+                                <tr><td>3</td><td>2022-23</td><td>The Longitudinal Resonance Properties of a Tapered Structure Over Unilaterally Layered Soil</td><td>Published</td><td>Mr.T,.Sai Krishna et al.</td><td>202241073322A</td></tr>
+                                <tr><td>4</td><td>2022-23</td><td>Machine learning based approach to study the influence of earthquake parameters on the bidirectional behaviorisolation systems</td><td>Published</td><td>Dr.K.Thulasirajan et al.</td><td>202211072025</td></tr>
+                                <tr><td>5</td><td>2021-22</td><td>An Earthquake-resistant Precast Beam-column connection Using Cleat angle and Replaceable dissipaters</td><td>Granted</td><td>Dr.K.Thulasirajan et al.</td><td>2021106172</td></tr>
+                                <tr><td>6</td><td>2021-22</td><td>Self-sensing Reinforced concrete and Structural Health Monitoring the Same</td><td>Published</td><td>Dr.J. Guru Jawahar et al.</td><td>202141058280</td></tr>
+                                <tr><td>7</td><td>2021-22</td><td>Sustainable translucent light Emitting concrete with Optical fibres and preparation thereof</td><td>Published</td><td>Mr.T,.Sai Krishna et al.</td><td>202241004387</td></tr>
+                            </table>
+                        `;
+                    break;
+                  case "me":
+                    content = `
+                            <h3>Patent Details from 2017-18 to 2023-24: ME Department</h3>
+                            <table>
+                                <tr><th>No</th><th>Year</th><th>Title of Patent</th><th>Status</th><th>Ownership details</th><th>File/ ID No</th></tr>
+                                <tr><td>1</td><td>2022-23</td><td>A system for optimizing connectivity and coverage in a wireless target sensor network</td><td>Granted</td><td>Dr. C. Nadhamuni Reddy et al.</td><td>DE202023100084</td></tr>
+                                <tr><td>2</td><td>2022-23</td><td>Wrist band for school children security</td><td>Published</td><td>Dr.B. Sudheer Reddy et al.</td><td>375562-001</td></tr>
+                            </table>
+                        `;
+                    break;
+                  case "ai":
+                    content = `
+                            <h3>Patent Details from 2023-24: AI Department</h3>
+                            <table>
+                                <tr><th>S.No</th><th>Year</th><th>Title of Patent</th><th>Status</th><th>Ownership details</th><th>File/ ID No</th></tr>
+                                <tr><td>1</td><td>2023-24</td><td>Artificial Intelligence based smart student management system to monitor and increasing using IoT and machine learning</td><td>Published</td><td>Dr. C. Siva Balaji Yadav<br>Mrs. K. Jagadeeswari<br>Mr. E.D Pavan Kumar</td><td>202341069912</td></tr>
+                                <tr><td>2</td><td>2023-24</td><td>Artificial Intelligence based smart system to enhance the better performance in the supply chain management using big data and business analytics</td><td>Published</td><td>Mrs. H. Teja</td><td>202341067361</td></tr>
+                                <tr><td>3</td><td>2023-24</td><td>Artificial Intelligence based traffic monitoring and car crash detection using and multimodal data from dashboard cameras and deep learning algorithms</td><td>Published</td><td>Mrs. V. Gayathri</td><td>202341071574</td></tr>
+                                <tr><td>4</td><td>2023-24</td><td>Artificial Intelligence based smart level crossing systems to detect dangerous situations in level crossing environments in both road and railway safety using video surveillance system and deep learning</td><td>Published</td><td>Mrs. Shaik Sumiya<br>Mrs. K. Kalaivani</td><td>202341072105</td></tr>
+                                <tr><td>5</td><td>2023-24</td><td>IOT and Artificial Intelligence based detection and prevention of plant disease with smart drip irrigation system using block chain technology and deep learning</td><td>Published</td><td>Mr. J. Bala Murali<br>Krishna</td><td>202341069910</td></tr>
+                                <tr><td>6</td><td>2023-24</td><td>Artificial Intelligence and IoT based self driving car for path planning and road lane detection with improved canny edges for self</td><td>Published</td><td>Mrs. Y. Saroja</td><td>202341075525</td></tr>
+                            </table>
+                        `;
+                    break;
+                  case "mca":
+                    content = `
+                            <h3>Patent Details from 2023-24: MCA Department</h3>
+                            <table>
+                                <tr><th>S.No</th><th>Year</th><th>Title of Patent</th><th>Status</th><th>Ownership details</th><th>File/ ID No</th></tr>
+                                <tr><td>1</td><td>2023-24</td><td>An Integrated Approach to Cardiovascular Disease Detection using Image Processing and Machine Learning</td><td>Published</td><td>S E Suresh</td><td>202341067548A</td></tr>
+                                <tr><td>2</td><td>2023-24</td><td>Artificial Intelligence Based traffic monitoring and car crash detection using and multi model data from dash board cameras and deep learning algorithms</td><td>Published</td><td>S Rajeswari</td><td>202341071574</td></tr>
+                                <tr><td>3</td><td>2023-24</td><td>Iot and Artificial Intelligence based detection and prevention of plant disease with smart drip irrigation system using block chain technology and deep learning</td><td>Published</td><td>Dr. K Shanmugam</td><td>202341069910</td></tr>
+                                <tr><td>4</td><td>2023-24</td><td>Artificial Intelligence based smart student Management system to monitor and increasing student engagement through continuous assessment using IOT and machine learning algorithms</td><td>Published</td><td>K Satyam et al.</td><td>202341069912</td></tr>
+                            </table>
+                        `;
+                    break;
+                  case "hbs":
+                    content = `
+                            <h3>Patent Details from 2017-18 to 2023-24: HBS</h3>
+                            <table>
+                                <tr><th>S.No</th><th>Year</th><th>Title of Patent</th><th>Status</th><th>Ownership details</th><th>File/ ID No</th></tr>
+                                <tr><td>1</td><td>2022-23</td><td>Systematic Approach Along With Statistical Techniques For Analysis ofAbnormal Returns on Indian Stock Market Due To Natural Disaster</td><td>Published</td><td>Dr. B. Aruna Kumari et al.</td><td>42/2022</td></tr>
+                                <tr><td>2</td><td>2021-22</td><td>An AI based system for processing Algebra Operation and method thereof</td><td>Published</td><td>Dr. B. Aruna Kumari et al.</td><td>51/2021</td></tr>
+                                <tr><td>3</td><td>2021-22</td><td>Sensor assembly for evaluating fluid dyanamic for a mechanical system and method thereof.</td><td>Published</td><td>Dr. N. Tarakaramu et al.</td><td>53/2021</td></tr>
+                                <tr><td>4</td><td>2021-22</td><td>Intelligent Motion Detecting Sensor for Domestic Application</td><td>Published</td><td>Dr. N. Tarakaramu et al.</td><td>50/2021</td></tr>
+                                <tr><td>5</td><td>2021-22</td><td>Intelligent Motion Detecting Sensor for Domestic Application</td><td>Published</td><td>K. Bhagya Lakshmi et al.</td><td>50/2021</td></tr>
+                                <tr><td>6</td><td>2021-22</td><td>A Fuzzy Logic Based Information Processing System and Method Thereof</td><td>Published</td><td>Dr. R. Vijaya Lakshmi et al.</td><td>3/2022</td></tr>
+                                <tr><td>7</td><td>2021-22</td><td>A Mathematical system for evaluating a Poisson distribution error signal</td><td>Published</td><td>N. Sujana Kumari et al.</td><td>8/2022</td></tr>
+                                <tr><td>8</td><td>2021-22</td><td>A Mathematical system for evaluating a Poisson distribution error signal</td><td>Published</td><td>Dr. N. Tarakaramu et al.</td><td>8/2022</td></tr>
+                                <tr><td>9</td><td>2021-22</td><td>A Mathematical system for evaluating a Poisson distribution error signal</td><td>Published</td><td>Dr. P. Krishna Jyothi et al.</td><td>8/2022</td></tr>
+                            </table>
+                            ';
+                    ';
+                    break;
+                  default:
+                    content = "";
+                }
+
+                contentDiv.innerHTML = content;
+              });
+            });
+          });
+        </script>
+        break;
+                  default:
+                    content = "";
+                }
+
+                contentDiv.innerHTML = content;
+
+                // Collapsible functionality
+                const coll = document.querySelectorAll(".collapsible");
+                coll.forEach((item) => {
+                  item.addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    const content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                      content.style.maxHeight = null;
+                    } else {
+                      content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                  });
+                });
+              });
+            });
+          });
+        </script>
+        <div class="recruiters-section">
+          <h2>Our Recruiters</h2>
+          <div class="recruiters-marquee">
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+              <img src="11.png" alt="Recruiter 11" />
+              <img src="12.png" alt="Recruiter 12" />
+              <img src="13.png" alt="Recruiter 13" />
+              <img src="14.png" alt="Recruiter 14" />
+              <img src="15.png" alt="Recruiter 15" />
+              <img src="16.png" alt="Recruiter 16" />
+              <img src="17.png" alt="Recruiter 17" />
+              <img src="18.png" alt="Recruiter 18" />
+              <img src="19.png" alt="Recruiter 19" />
+              <img src="20.png" alt="Recruiter 20" />
+              <img src="21.png" alt="Recruiter 21" />
+              <img src="22.png" alt="Recruiter 22" />
+              <img src="23.png" alt="Recruiter 23" />
+              <img src="24.png" alt="Recruiter 24" />
+              <img src="25.png" alt="Recruiter 25" />
+            </marquee>
+          </div>
+        </div>
+
+        <style>
+          .recruiters-section {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #f8f8f8; /* Light background */
+            border-bottom: 1px solid #ddd;
+          }
+
+          .recruiters-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+          }
+
+          .recruiters-marquee {
+            overflow: hidden; /* Hide overflow from marquee */
+            white-space: nowrap; /* Prevent line breaks */
+            padding: 10px 0;
+          }
+
+          .recruiters-marquee img {
+            height: 60px; /* Adjust image height */
+            margin: 0 15px; /* Spacing between images */
+            display: inline-block; /* Prevent vertical alignment issues */
+          }
+        </style>
+        <div class="footer-section">
+          <div class="footer-columns">
+            <div class="footer-box">
+              <h3>Contact Us</h3>
+              <p>
+                Annamacharya Institute of Technology & Sciences<br />
+                Venkatapuram, Renigunta, Tirupati<br />
+                Chitoor District, Andhra Pradesh – 517520.<br />
+                &#x260E; 0877-2285609<br />
+                &#x260E; 0877-2285608<br />
+                &#x1F4F1; +91-9948149222<br />
+                &#x1F4F1; +91-9948661276<br />
+                &#x2709;
+                <a href="mailto:aitstpt@yahoo.com">aitstpt@yahoo.com</a> |
+                &#x2709;
+                <a href="mailto:aitsadmissions@gmail.com"
+                  >aitsadmissions@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="footer-box">
+              <h3>Recent Posts</h3>
+              <p>
+                <a href="#"
+                  >5 productive things to do in lock down due to Covid-19
+                  Pandemic</a
+                ><br />
+                February 10, 2023
+              </p>
+              <p>
+                <a href="#"
+                  >5 productive things to do in lock down due to Covid-19
+                  Pandemic</a
+                ><br />
+                May 20, 2020
+              </p>
+            </div>
+            <div class="footer-box">
+              <h3>Follow Us</h3>
+              <div class="social-icons">
+                <a href="#"><img src="youtube.png" alt="YouTube" /></a>
+                <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+                <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+                <a href="#"><img src="linkdin.png" alt="LinkedIn" /></a>
+                <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div class="footer-columns"></div>
+          <div class="footer-bottom">
+            <p>
+              2018 © Annamacharya Institute of Technology & Sciences. All rights
+              reserved.
+            </p>
+            <p>Powered by</p>
+            <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Reach Us</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Refund Policy</a>
+            </div>
+          </div>
+        </div>
+
+        <style>
+          /* ... (your existing CSS) ... */
+
+          .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+          }
+
+          .footer-bottom p {
+            margin: 5px 0;
+          }
+
+          .footer-links {
+            margin-top: 10px;
+          }
+
+          .footer-links a {
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+          }
+
+          .footer-links a:hover {
+            text-decoration: underline;
+          }
+        </style>
+      </body>
+    </html>
+  </body>
+</html>

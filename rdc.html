@@ -1,0 +1,484 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annamacharya Institute of Technology & Sciences</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <!-- Left Side: Logo -->
+        <div class="logo">
+          <img src="logo.png" alt="Annamacharya Institute Logo" />
+        </div>
+
+        <!-- Middle: Text with Styling -->
+        <div class="institute-info">
+          <h1>
+            <span class="blue-text"
+              >Annamacharya Institute of Technology & Sciences, Tirupati</span
+            ><br />
+            <span class="red-text">(Autonomous)</span>
+          </h1>
+          <p class="blue-text">
+            Approved by AICTE, New Delhi & Affiliation to JNTUA,
+            Anantapuramu.<br />
+            All the 5 eligible UG Engineering Programs are accredited by NBA,
+            New Delhi.<br />
+            Accredited by NAAC with 'A' Grade, Bangalore. Accredited by
+            Institution of Engineers (India), KOLKATA.<br />
+            Recognized under sections 2(f) & 12(B) of UGC Act 1956.
+          </p>
+        </div>
+
+        <!-- Right Side: Code in a Box -->
+        <div class="code-box">
+          <p>EAMCET / ICET</p>
+          <p>PGECET / ECET CODE</p>
+          <p>AITT</p>
+        </div>
+      </div>
+      <!-- Blinking Text Section -->
+      <div class="blinking-text-container">
+        <p class="blinking-text">
+          A stage has been set to evaluate Institution's performance in Tier-1
+          credentials of NBA
+        </p>
+      </div>
+
+      <!-- JavaScript for Dynamic Colors -->
+      <script>
+        const colors = [
+          { bg: "#FF6F61", text: "#FFFFFF" }, // Coral
+          { bg: "#6B5B95", text: "#FFFFFF" }, // Purple
+          { bg: "#88B04B", text: "#FFFFFF" }, // Green
+          { bg: "#F7CAC9", text: "#333333" }, // Pink
+          { bg: "#92A8D1", text: "#333333" }, // Blue
+          { bg: "#955251", text: "#FFFFFF" }, // Maroon
+          { bg: "#B565A7", text: "#FFFFFF" }, // Magenta
+          { bg: "#009B77", text: "#FFFFFF" }, // Teal
+        ];
+
+        const container = document.querySelector(".blinking-text-container");
+        const text = document.querySelector(".blinking-text");
+
+        let currentIndex = 0;
+
+        function changeColors() {
+          const { bg, text: textColor } = colors[currentIndex];
+          container.style.backgroundColor = bg;
+          text.style.color = textColor;
+
+          currentIndex = (currentIndex + 1) % colors.length; // Cycle through colors
+        }
+
+        setInterval(changeColors, 3000); // Change colors every 3 seconds
+      </script>
+    </header>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">About AITS</a>
+          <div class="dropdown-content">
+            <a href="#">Governance</a>
+            <a href="#">Facilities</a>
+            <a href="#">Affiliation & Accreditation</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Academics</a>
+          <div class="dropdown-content">
+            <a href="#">Courses Offered</a>
+            <a href="#">Academic Curriculum</a>
+            <a href="#">Examination</a>
+            <a href="#">Toppers List</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Departments</a>
+          <div class="dropdown-content">
+            <a href="#">AIDS</a>
+            <a href="#">AIML</a>
+            <a href="#">ECE</a>
+            <a href="#">CSE</a>
+            <a href="#">CDS</a>
+            <a href="#">IOT and Cyber Security</a>
+            <a href="#">EEE</a>
+            <a href="#">ME</a>
+            <a href="#">CE</a>
+            <a href="#">HBS</a>
+            <a href="#">MBA</a>
+            <a href="#">MCA</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">IQAC</a>
+          <div class="dropdown-content">
+            <a href="#">About IQAC</a>
+            <a href="#">Best Practices</a>
+            <a href="#">Institutional Distinctiveness</a>
+            <a href="#">Quality Circles</a>
+            <a href="#">AQARs</a>
+            <a href="#">Meetings</a>
+            <a href="#">Feedback</a>
+            <a href="#">Student Satisfaction Survey</a>
+            <a href="#">Contact</a>
+          </div>
+        </li>
+        <li><a href="#">ICAME 2024</a></li>
+        <li><a href="rdc.html">R & D</a></li>
+        <li><a href="nrif.html">NIRF</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Campus Placements</a>
+          <div class="dropdown-content">
+            <a href="#">Placements</a>
+            <a href="#">Placement Gallery</a>
+          </div>
+        </li>
+        <li><a href="#">Alumni</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Events & Gallery</a>
+          <div class="dropdown-content">
+            <a href="#">Events</a>
+            <a href="#">Photo Gallery</a>
+            <a href="#">Video Gallery</a>
+            <a href="#">Professional Societies</a>
+            <a href="#">Other</a>
+          </div>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li>
+          <a href="verification.pdf"
+            >Student Certificate Verification Procedure</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <nav class="navbar"></nav>
+
+    <div class="news-marquee-container">
+      <div class="latest-news-static">Latest News:</div>
+      <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+          A stage has been set to evaluate Institution’s performance in Tier-1
+          credentials of NBA &nbsp;&nbsp;&nbsp; B. Tech ME and B. Tech EEE are
+          accredited by NBA in Tier-I mode up to June 2027
+        </marquee>
+      </div>
+    </div>
+    <section class="rdc-section">
+      <div class="rdc-container">
+        <h2>Research & Development Cell (RDC)</h2>
+        <div class="rdc-buttons">
+          <button class="rdc-button" data-content="about">About R & D</button>
+          <button class="rdc-button" data-content="funded">
+            Funded Projects
+          </button>
+          <button class="rdc-button" data-content="patents">
+            Patents Published and Granted
+          </button>
+          <button class="rdc-button" data-content="publications">
+            Publications
+          </button>
+          <button class="rdc-button" data-content="policies">
+            Research Policies
+          </button>
+        </div>
+        <div class="rdc-content" id="rdc-content"></div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".rdc-button");
+        const contentDiv = document.getElementById("rdc-content");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const contentKey = this.getAttribute("data-content");
+            let content = "";
+
+            switch (contentKey) {
+              case "about":
+                content = `
+              <button class="collapsible">Policy</button>
+              <div class="content">
+                <p><b>Introduction</b><br>Annamacharya Institute of Technology & Sciences, Tirupati has promoted meaningful, scientific and industrial R&D activities with the vision and mission of pursuing and promoting research in frontier technologies as well as the various disciplines of Engineering, Science, Humanities, and Management. The RDC aims to reach the Vision and Mission of the college by encouraging the students and faculty to undertake the research in newly emerging frontier areas and multidisciplinary fields. The organizational structure of RDC consists of various committees to facilitate and monitor research activities.<br><br><b>Vision</b><br>To put in place a robust mechanism for developing and strengthening the research ecosystem within Institution, aligned with the provisions of NEP-2020.<br><br><b>Mission</b><br>To create a conducive environment for enhanced research productivity.<br>To encourage collaboration across industry, government, community-based organizations, and agencies at the local, national, and international levels.<br>To facilitate greater access to research through mobilization of resources and funding<br><br><b>Objectives</b><br>To create an organizational structure with role-based functions of RDC, formulate Research Policy for AITS, identify thrust areas of research, and form related cluster groups/ frontline teams/consortia of researchers.<br>To create enabling provisions in Research Policies for recruitment of research personnel, procurement of equipment, and financial management with adequate autonomy to the Principal Investigator(s) and disseminate research outcomes to stakeholders and the public at large.<br>To establish a special purpose vehicle to promote researchers and innovators, identify potential collaborators from industry, research organizations, academic institutions & other stakeholders for cooperation and synergistic partnerships.<br>To act as a liaison between researchers & relevant research funding agencies, extend guidance in preparation & submission of project proposals and post-sanctioning of the grants to oversee adherence to timelines.<br>To have better coordination among other cells/centers dealing with Institute-Industry Linkage, Incubation, Innovation and Entrepreneurship Development and Intellectual Property Rights (IPR).<br>To develop an Institutional Research Information System for sharing the status of ongoing/ completed research projects/Programmes, expertise & resources, etc., making effective use of Information & Communication Technology (ICT) for preparing the database of in-house experts to provide industrial consultancy and services.<br>To engage & utilize the services of superannuated active faculty/scientists in research capacity building of talented young minds and promote mobility of researchers across institutions and R&D Labs.<br>To serve as nodal center for ideation and conceptualization of research topics/themes by organizing workshops and training programs and ensuring the integrity and ethical practices in research activities.<br><br><b>Roles and Responsibilities of RDC:</b><br>To enhance the Research Ecosystem of the college<br>To promote Academic Research in the college with Faculty and students<br>To preserve the Code of ethics of the college while publishing<br>To help the faculty in applying for funds in the form of Sponsored research / Grants from government and non government agencies<br>To pave the path for the teachers, students and researchers to collaborate for research</p>
+              </div>
+              <button class="collapsible">R And D Organogram</button>
+              <div class="content">
+                <img src="orga.png" alt="R&D Organogram">
+              </div>
+              <button class="collapsible">Compositions of RAC & RDC</button>
+              <div class="content">
+                <p>Research & Development Wing<br>Research & Development Wing in the college comprises two committees<br>a) Research Advisory Council (RAC)<br>b) Research & Development Cell (RDC)</p>
+                <p>Composition of Research Advisory Council (RAC)</p>
+                <table>
+                  <tr><th>S.No</th><th>Name and designation</th><th>Role in the Council</th></tr>
+                  <tr><td>1</td><td>Prof. C. Nadhamuni Reddy<br>Principal, AITS, Tirupati</td><td>Chairperson</td></tr>
+                  <tr><td>2</td><td>Sri. C. Abhishek Reddy<br>Executive Director, AITS, Tirupati</td><td>Advisor</td></tr>
+                  <tr><td>3</td><td>Dr. V.N. Mani<br>Scientist-F, C-MET, Hyderabad</td><td>Advisor</td></tr>
+                  <tr><td>4</td><td>Dr. T. Rajendra Prasad<br>Scientist-F, NARL, Gadanki</td><td>Advisor</td></tr>
+                </table>
+                <p>Composition of Research & Development Cell(RDC)</p>
+                <table>
+                  <tr><th>S.No</th><th>Name and designation</th><th>Role in the RDC</th></tr>
+                  <tr><td>1</td><td>Dr. J. Guru Jawahar<br>Professor, Dept.of CE, AITS, Tirupati</td><td>Director/ Convener</td></tr>
+                  <tr><td>2</td><td>Dr. K. Ramya<br>Coordinator, Internal Quality Assurance Cell (IQAC), AITS, Tirupati</td><td>Member</td></tr>
+                  <tr><td>3</td><td>Dr. K. Balaji Nanda Kumar Reddy<br>Convener, Research Ethics Committee (REC), AITS, Tirupati</td><td>Member</td></tr>
+                  <tr><td>4</td><td>Mr. P. Bhanu Prakash<br>Convener, Industry-Interaction Cell (IIC), AITS, Tirupati</td><td>Member</td></tr>
+                  <tr><td>5</td><td>Dr. K. Thulasirajan<br>Coordinator, Intellectual Property Rights (IPR), AITS, Tirupati</td><td>Member</td></tr>
+                  <tr><td>6</td><td>Dr. P. Lavanya<br>Coordinator, Institute Ethics Committee (IEC), AITS, Tirupati</td><td>Member</td></tr>
+                  <tr><td>7</td><td>Mr. N. Dilip Kumar<br>Coordinator, Entrepreneurship Innovation and Start-ups Centre (EISC), AITS, Tirupati</td><td>Member</td></tr>
+                  <tr><td>8</td><td>Mr. D. Ayyappa Reddy<br>Accounts Officer, AITS, Tirupati</td><td>Member</td></tr>
+                </table>
+              </div>
+            `;
+                break;
+
+              case "funded":
+                content = `
+              <h3>Funded Projects</h3>
+              <p>Grants Received under AQIS-AICTE</p>
+              <table>
+                <tr><th>Year</th><th>Scheme</th><th>Name of the coordinator</th><th>Amount Sanctioned</th><th>Sanctioned Letter Date</th><th>Sanctioned Letter Number</th></tr>
+                <tr><td>2020</td><td>MODROBS</td><td>Dr. N. Pushpalatha</td><td>8,10,980</td><td>20-07-2020</td><td>F.No. 9-155ADC/MODROB/Policy-I/2019-2020</td></tr>
+                <tr><td>2020</td><td>FDP</td><td>Dr. S. Arul</td><td>5,30,333</td><td>20-07-2020</td><td>Application ID (1-7080740041)</td></tr>
+                <tr><td>2020</td><td>STTP</td><td>Dr. N. Pushpalatha</td><td>3,25,000</td><td>10-01-2020</td><td>F.No. 34-65/291/RIFD/STTP/Policy-I/2018-19</td></tr>
+                <tr><td>2019</td><td>GOC</td><td>Dr. N. Chandrika</td><td>4,97,500</td><td>09.12.2020</td><td>F.No. 67-49/RIFD/GOC/Policy/Policy-I/2018-19</td></tr>
+                <tr><td>2019</td><td>FDP</td><td>Dr. S. Arul</td><td>4,78,000</td><td>10-05-2019</td><td>F.No. 34-55/5/RIFD/FDP/Policy-I/2017-18</td></tr>
+                <tr><td>2019</td><td>STTP</td><td>Dr. K. Narasimhulu</td><td>3,50,000</td><td>10-05-2019</td><td>F.No. 34-56/124/RIFD/STTP/Policy-I/2017-18</td></tr>
+                <tr><td>2019</td><td>STTP</td><td>Dr. C. Sasikala</td><td>3,44,000</td><td>10-05-2019</td><td>F.No. 34-56/63/RIFD/STTP/Policy-I/2017-18</td></tr>
+                <tr><td>2013</td><td>SEMINAR GRANT</td><td>K. Balaji Nanda Kumar Reddy</td><td>2,00,000</td><td>29-07-2013</td><td>F.No.7-209/RIFD/SG/POLICY-1/2013-14 & 7-01-2014</td></tr>
+                <tr><td>2011</td><td>SEMINAR GRANT</td><td>Md. Jakeer Hussain</td><td>1,00,000</td><td>31-03-2011</td><td>F.No. RIFD/SEM/121/2010-11</td></tr>
+                <tr><td colspan="3">Total Amount Sanctioned</td><td>36,35,813</td><td colspan="2"></td></tr>
+              </table>
+            `;
+                break;
+              case "patents":
+                content = `
+
+ <h3>Patents Published and Granted</h3>
+
+<div class="patent-headings">
+
+<button class="patent-heading" data-content="ece">Patent Details from 2017-18 to 2023-24: ECE Department</button>
+
+<button class="patent-heading" data-content="cse">Patent Details from 2017-18 to 2023-24: CSE Department</button>
+
+<button class="patent-heading" data-content="ce">Patent Details from 2017-18 to 2023-24: CE Department</button>
+
+<button class="patent-heading" data-content="me">Patent Details from 2017-18 to 2023-24: ME Department</button>
+
+<button class="patent-heading" data-content="ai">Patent Details from 2023-24: AI Department</button>
+
+<button class="patent-heading" data-content="mca">Patent Details from 2023-24: MCA Department</button>
+
+ <button class="patent-heading" data-content="hbs">Patent Details from 2017-18 to 2023-24: HBS</button>
+
+</div>
+
+ <div class="patent-content" id="patent-content"></div>
+
+
+
+`;
+
+                break;
+
+              case "publications":
+                content = `
+              <h3>Publications</h3>
+              <p>No. of papers published in National/ International Journals and National/ International Conferences</p>
+              <table>
+                <tr><th>No</th><th>Year</th><th>CE</th><th>CSE</th><th>ECE</th><th>EEE</th><th>ME</th><th>MBA</th><th>MCA</th><th>HBS</th><th>Total</th></tr>
+                <tr><td>1</td><td>2023-24</td><td>3</td><td>5</td><td>11</td><td>6</td><td>12</td><td>3</td><td>13</td><td>2</td><td>53</td></tr>
+                <tr><td>2</td><td>2022-23</td><td>4</td><td>5</td><td>7</td><td>0</td><td>11</td><td>5</td><td>23</td><td>3</td><td>40</td></tr>
+                <tr><td>3</td><td>2021-22</td><td>2</td><td>9</td><td>0</td><td>9</td><td>6</td><td>0</td><td>8</td><td>0</td><td>34</td></tr>
+                <tr><td>4</td><td>2020-21</td><td>6</td><td>5</td><td>0</td><td>7</td><td>5</td><td>2</td><td>0</td><td>6</td><td>144</td></tr>
+                <tr><td>5</td><td>2019-20</td><td>2</td><td>0</td><td>18</td><td>3</td><td>8</td><td>15</td><td>16</td><td>0</td><td>128</td></tr>
+                <tr><td>6</td><td>2018-19</td><td>5</td><td>3</td><td>24</td><td>6</td><td>22</td><td>5</td><td>16</td><td>0</td><td>197</td></tr>
+                <tr><td>7</td><td>2017-18</td><td>7</td><td>2</td><td>12</td><td>4</td><td>19</td><td>0</td><td>5</td><td>0</td><td>167</td></tr>
+                <tr><td colspan="2">Sub Total</td><td>31</td><td>9</td><td>25</td><td>6</td><td>49</td><td>10</td><td>91</td><td>11</td><td>703</td></tr>
+              </table>
+            `;
+                break;
+
+              case "policies":
+                content = `
+              <h3>Research Policies</h3>
+              <a href="research.pdf" target="_blank"><button>Research Policy</button></a>
+              <a href="seed.pdf" target="_blank"><button>Seed Money Policy</button></a>
+            `;
+                break;
+
+              default:
+                content = "<p>No content available for this section.</p>";
+            }
+
+            contentDiv.innerHTML = content;
+
+            // Add collapsible functionality dynamically
+            const collapsibles = document.querySelectorAll(".collapsible");
+            collapsibles.forEach((collapsible) => {
+              collapsible.addEventListener("click", function () {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                }
+              });
+            });
+          });
+        });
+      });
+    </script>
+    <div class="recruiters-section">
+      <h2>Our Recruiters</h2>
+      <div class="recruiters-marquee">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+          <img src="11.png" alt="Recruiter 11" />
+          <img src="12.png" alt="Recruiter 12" />
+          <img src="13.png" alt="Recruiter 13" />
+          <img src="14.png" alt="Recruiter 14" />
+          <img src="15.png" alt="Recruiter 15" />
+          <img src="16.png" alt="Recruiter 16" />
+          <img src="17.png" alt="Recruiter 17" />
+          <img src="18.png" alt="Recruiter 18" />
+          <img src="19.png" alt="Recruiter 19" />
+          <img src="20.png" alt="Recruiter 20" />
+          <img src="21.png" alt="Recruiter 21" />
+          <img src="22.png" alt="Recruiter 22" />
+          <img src="23.png" alt="Recruiter 23" />
+          <img src="24.png" alt="Recruiter 24" />
+          <img src="25.png" alt="Recruiter 25" />
+        </marquee>
+      </div>
+    </div>
+
+    <style>
+      .recruiters-section {
+        text-align: center;
+        padding: 30px 20px;
+        background-color: #f8f8f8; /* Light background */
+        border-bottom: 1px solid #ddd;
+      }
+
+      .recruiters-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .recruiters-marquee {
+        overflow: hidden; /* Hide overflow from marquee */
+        white-space: nowrap; /* Prevent line breaks */
+        padding: 10px 0;
+      }
+
+      .recruiters-marquee img {
+        height: 60px; /* Adjust image height */
+        margin: 0 15px; /* Spacing between images */
+        display: inline-block; /* Prevent vertical alignment issues */
+      }
+    </style>
+    <div class="footer-section">
+      <div class="footer-columns">
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+          <p>
+            Annamacharya Institute of Technology & Sciences<br />
+            Venkatapuram, Renigunta, Tirupati<br />
+            Chitoor District, Andhra Pradesh – 517520.<br />
+            &#x260E; 0877-2285609<br />
+            &#x260E; 0877-2285608<br />
+            &#x1F4F1; +91-9948149222<br />
+            &#x1F4F1; +91-9948661276<br />
+            &#x2709;
+            <a href="mailto:aitstpt@yahoo.com">aitstpt@yahoo.com</a> | &#x2709;
+            <a href="mailto:aitsadmissions@gmail.com"
+              >aitsadmissions@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="footer-box">
+          <h3>Recent Posts</h3>
+          <p>
+            <a href="#"
+              >5 productive things to do in lock down due to Covid-19
+              Pandemic</a
+            ><br />
+            February 10, 2023
+          </p>
+          <p>
+            <a href="#"
+              >5 productive things to do in lock down due to Covid-19
+              Pandemic</a
+            ><br />
+            May 20, 2020
+          </p>
+        </div>
+        <div class="footer-box">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><img src="youtube.png" alt="YouTube" /></a>
+            <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+            <a href="#"><img src="linkdin.png" alt="LinkedIn" /></a>
+            <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-section">
+      <div class="footer-columns"></div>
+      <div class="footer-bottom">
+        <p>
+          2018 © Annamacharya Institute of Technology & Sciences. All rights
+          reserved.
+        </p>
+        <p>Powered by</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Reach Us</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      /* ... (your existing CSS) ... */
+
+      .footer-bottom {
+        text-align: center;
+        padding: 20px 0;
+        border-top: 1px solid #ddd;
+        margin-top: 20px;
+      }
+
+      .footer-bottom p {
+        margin: 5px 0;
+      }
+
+      .footer-links {
+        margin-top: 10px;
+      }
+
+      .footer-links a {
+        margin: 0 10px;
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </body>
+</html>

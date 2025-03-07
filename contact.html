@@ -1,0 +1,331 @@
+ <head>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+<header>
+      <div class="header-container">
+        <!-- Left Side: Logo -->
+        <div class="logo">
+          <img src="logo.png" alt="Annamacharya Institute Logo" />
+        </div>
+
+        <!-- Middle: Text with Styling -->
+        <div class="institute-info">
+          <h1>
+            <span class="blue-text"
+              >Annamacharya Institute of Technology & Sciences, Tirupati</span
+            ><br />
+            <span class="red-text">(Autonomous)</span>
+          </h1>
+          <p class="blue-text">
+            Approved by AICTE, New Delhi & Affiliation to JNTUA,
+            Anantapuramu.<br />
+            All the 5 eligible UG Engineering Programs are accredited by NBA,
+            New Delhi.<br />
+            Accredited by NAAC with 'A' Grade, Bangalore. Accredited by
+            Institution of Engineers (India), KOLKATA.<br />
+            Recognized under sections 2(f) & 12(B) of UGC Act 1956.
+          </p>
+        </div>
+
+        <!-- Right Side: Code in a Box -->
+        <div class="code-box">
+          <p>EAMCET / ICET</p>
+          <p>PGECET / ECET CODE</p>
+          <p>AITT</p>
+        </div>
+      </div>
+      <!-- Blinking Text Section -->
+      <div class="blinking-text-container">
+        <p class="blinking-text">
+          A stage has been set to evaluate Institution's performance in Tier-1
+          credentials of NBA
+        </p>
+      </div>
+
+      <!-- JavaScript for Dynamic Colors -->
+      <script>
+        const colors = [
+          { bg: "#FF6F61", text: "#FFFFFF" }, // Coral
+          { bg: "#6B5B95", text: "#FFFFFF" }, // Purple
+          { bg: "#88B04B", text: "#FFFFFF" }, // Green
+          { bg: "#F7CAC9", text: "#333333" }, // Pink
+          { bg: "#92A8D1", text: "#333333" }, // Blue
+          { bg: "#955251", text: "#FFFFFF" }, // Maroon
+          { bg: "#B565A7", text: "#FFFFFF" }, // Magenta
+          { bg: "#009B77", text: "#FFFFFF" }, // Teal
+        ];
+
+        const container = document.querySelector(".blinking-text-container");
+        const text = document.querySelector(".blinking-text");
+
+        let currentIndex = 0;
+
+        function changeColors() {
+          const { bg, text: textColor } = colors[currentIndex];
+          container.style.backgroundColor = bg;
+          text.style.color = textColor;
+
+          currentIndex = (currentIndex + 1) % colors.length; // Cycle through colors
+        }
+
+        setInterval(changeColors, 3000); // Change colors every 3 seconds
+      </script>
+    </header>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">About AITS</a>
+          <div class="dropdown-content">
+            <a href="#">Governance</a>
+            <a href="#">Facilities</a>
+            <a href="#">Affiliation & Accreditation</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Academics</a>
+          <div class="dropdown-content">
+            <a href="#">Courses Offered</a>
+            <a href="#">Academic Curriculum</a>
+            <a href="#">Examination</a>
+            <a href="#">Toppers List</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Departments</a>
+          <div class="dropdown-content">
+            <a href="#">AIDS</a>
+            <a href="#">AIML</a>
+            <a href="#">ECE</a>
+            <a href="#">CSE</a>
+            <a href="#">CDS</a>
+            <a href="#">IOT and Cyber Security</a>
+            <a href="#">EEE</a>
+            <a href="#">ME</a>
+            <a href="#">CE</a>
+            <a href="#">HBS</a>
+            <a href="#">MBA</a>
+            <a href="#">MCA</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">IQAC</a>
+          <div class="dropdown-content">
+            <a href="#">About IQAC</a>
+            <a href="#">Best Practices</a>
+            <a href="#">Institutional Distinctiveness</a>
+            <a href="#">Quality Circles</a>
+            <a href="#">AQARs</a>
+            <a href="#">Meetings</a>
+            <a href="#">Feedback</a>
+            <a href="#">Student Satisfaction Survey</a>
+            <a href="#">Contact</a>
+          </div>
+        </li>
+        <li><a href="#">ICAME 2024</a></li>
+        <li><a href="rdc.html">R & D</a></li>
+        <li><a href="nrif.html">NIRF</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Campus Placements</a>
+          <div class="dropdown-content">
+            <a href="#">Placements</a>
+            <a href="#">Placement Gallery</a>
+          </div>
+        </li>
+        <li><a href="#">Alumni</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Events & Gallery</a>
+          <div class="dropdown-content">
+            <a href="#">Events</a>
+            <a href="#">Photo Gallery</a>
+            <a href="#">Video Gallery</a>
+            <a href="#">Professional Societies</a>
+            <a href="#">Other</a>
+          </div>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="verification.pdf">Student Certificate Verification Procedure</a></li>
+      </ul>
+    </nav>
+    <nav class="navbar"></nav>
+
+<div class="news-marquee-container">
+    <div class="latest-news-static">
+        Latest News:
+    </div>
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            A stage has been set to evaluate Institution’s performance in Tier-1 credentials of NBA &nbsp;&nbsp;&nbsp; B. Tech ME and B. Tech EEE are accredited by NBA in Tier-I mode up to June 2027
+        </marquee>
+    </div>
+</div>
+
+</header>
+<section class="contact-content">
+    <div class="map-container">
+    <a href="https://maps.app.goo.gl/Knnp12RkFh6CH5EG9" target="_blank">
+        <img src="map.jpg" alt="College Location Map" width="100%" height="500">
+    </a>
+</div>
+    <div class="college-title">
+        <h2>Annamacharya Institute of Technology And Sciences :: Tirupathi</h2>
+    </div>
+    <div class="contact-details-container">
+        <div class="address-box">
+            <p>Venkatapuram (Village),<br>Renigunta (Mandal),<br>Tirupati, Chittoor District,<br>Andhra Pradesh – 517520.</p>
+            <p>Phone: +91-0877-2285609<br>Fax: +91-0877-2285608<br>Mobile: +91-9948149222, +91-9948661276<br>E-mail: <a href="mailto:aitstpt@yahoo.com">aitstpt@yahoo.com</a>, <a href="mailto:aitsadmissions@gmail.com">aitsadmissions@gmail.com</a></p>
+        </div>
+        <div class="contact-form-box">
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Contact Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+<div class="recruiters-section">
+  <h2>Our Recruiters</h2>
+  <div class="recruiters-marquee">
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+      <img src="11.png" alt="Recruiter 11" />
+      <img src="12.png" alt="Recruiter 12" />
+      <img src="13.png" alt="Recruiter 13" />
+      <img src="14.png" alt="Recruiter 14" />
+      <img src="15.png" alt="Recruiter 15" />
+      <img src="16.png" alt="Recruiter 16" />
+      <img src="17.png" alt="Recruiter 17" />
+      <img src="18.png" alt="Recruiter 18" />
+      <img src="19.png" alt="Recruiter 19" />
+      <img src="20.png" alt="Recruiter 20" />
+      <img src="21.png" alt="Recruiter 21" />
+      <img src="22.png" alt="Recruiter 22" />
+      <img src="23.png" alt="Recruiter 23" />
+      <img src="24.png" alt="Recruiter 24" />
+      <img src="25.png" alt="Recruiter 25" />
+    </marquee>
+  </div>
+</div>
+
+<style>
+  .recruiters-section {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f8f8f8; /* Light background */
+    border-bottom: 1px solid #ddd;
+  }
+
+  .recruiters-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .recruiters-marquee {
+    overflow: hidden; /* Hide overflow from marquee */
+    white-space: nowrap; /* Prevent line breaks */
+    padding: 10px 0;
+  }
+
+  .recruiters-marquee img {
+    height: 60px; /* Adjust image height */
+    margin: 0 15px; /* Spacing between images */
+    display: inline-block; /* Prevent vertical alignment issues */
+  }
+</style>
+<div class="footer-section">
+  <div class="footer-columns">
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p>
+        Annamacharya Institute of Technology & Sciences<br />
+        Venkatapuram, Renigunta, Tirupati<br />
+        Chitoor District, Andhra Pradesh – 517520.<br />
+        &#x260E; 0877-2285609<br />
+        &#x260E; 0877-2285608<br />
+        &#x1F4F1; +91-9948149222<br />
+        &#x1F4F1; +91-9948661276<br />
+        &#x2709; <a href="mailto:aitstpt@yahoo.com">aitstpt@yahoo.com</a> |
+        &#x2709;
+        <a href="mailto:aitsadmissions@gmail.com">aitsadmissions@gmail.com</a>
+      </p>
+    </div>
+    <div class="footer-box">
+      <h3>Recent Posts</h3>
+      <p>
+        <a href="#"
+          >5 productive things to do in lock down due to Covid-19 Pandemic</a
+        ><br />
+        February 10, 2023
+      </p>
+      <p>
+        <a href="#"
+          >5 productive things to do in lock down due to Covid-19 Pandemic</a
+        ><br />
+        May 20, 2020
+      </p>
+    </div>
+    <div class="footer-box">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="youtube.png" alt="YouTube" /></a>
+        <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="linkdin.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-section">
+  <div class="footer-columns"></div>
+  <div class="footer-bottom">
+    <p>
+      2018 © Annamacharya Institute of Technology & Sciences. All rights
+      reserved.
+    </p>
+    <p>Powered by</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Reach Us</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Refund Policy</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* ... (your existing CSS) ... */
+
+  .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+  }
+
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+
+  .footer-links a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+</style>
